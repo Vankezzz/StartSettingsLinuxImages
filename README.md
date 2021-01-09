@@ -38,9 +38,10 @@ Codename:   bionic
 ## 3. Установка необходимых пакетов для работы
 Для работы будем пользоваться командой: `sudo apt-get install [пакет1] [пакет2] .. [пакетN]`
 К примеру: `sudo apt-get install git krusader konsole`
-В данном образе автоматически установлены следующие пакеты:
+Пакеты версии 1.0:
 * `git`
 * `krusader` и `konsole`
+Пакеты будующей версии:
 
 ## 4. Экспорт и импорт виртуальной машины 
 Экспорт и импорт более подробно описан https://tavalik.ru/import-i-ekport-virtualnoj-mashiny-virtualbox/
