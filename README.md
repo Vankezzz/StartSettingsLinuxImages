@@ -5,6 +5,7 @@
 > 3. Установка необходимых пакетов для работы
 > 4. Экспорт и импорт виртуальной машины 
 > 5. Установка Docker
+> 6. Установка nginx
 
 ## Введение
 На данный момент верcия операционной системы Ubuntu 18.04 LTS, в которой всего два пользователя user и администратор root с одинаковыми паролями : qwerty
@@ -63,3 +64,9 @@ sudo apt update && apt-cache policy docker-ce
 6. Затем проверяем запущен ли сервис: ` sudo systemctl status docker`
 ### Ссылки с более подробным описанием действий
 1. https://losst.ru/ustanovka-docker-na-ubuntu-16-04
+
+## 5. Установка nginx
+1. Установим по шагам : https://losst.ru/ustanovka-nginx-ubuntu-16-04
+
+### Ссылки с более подробным описанием действий
+1. https://losst.ru/ustanovka-nginx-ubuntu-16-04
