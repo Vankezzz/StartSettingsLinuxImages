@@ -48,7 +48,7 @@ Codename:   bionic
 ## 4. Экспорт и импорт виртуальной машины 
 Экспорт и импорт более подробно описан https://tavalik.ru/import-i-ekport-virtualnoj-mashiny-virtualbox/
 
-## 5. Экспорт и импорт виртуальной машины 
+## 5. Установка Docker
 1. Установим пакеты для работы apt по https:
 `sudo apt install apt-transport-https ca-certificates curl software-properties-common`
 2. Мы будем устанавливать программу из официального репозитория разработчиков. Сначала надо добавить ключ репозитория:
