@@ -4,6 +4,7 @@
 > 2. Установка дополнения гостевой операционной системы VIRTUALBOX для удобного двунаправленного копипаста
 > 3. Установка необходимых пакетов для работы
 > 4. Экспорт и импорт виртуальной машины 
+> 5. Установка Docker
 
 ## Введение
 На данный момент верcия операционной системы Ubuntu 18.04 LTS, в которой всего два пользователя user и администратор root с одинаковыми паролями : qwerty
@@ -47,3 +48,18 @@ Codename:   bionic
 ## 4. Экспорт и импорт виртуальной машины 
 Экспорт и импорт более подробно описан https://tavalik.ru/import-i-ekport-virtualnoj-mashiny-virtualbox/
 
+## 5. Экспорт и импорт виртуальной машины 
+1. Установим пакеты для работы apt по https:
+`sudo apt install apt-transport-https ca-certificates curl software-properties-common`
+2. Мы будем устанавливать программу из официального репозитория разработчиков. Сначала надо добавить ключ репозитория:
+`curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -`
+3. Затем добавьте репозиторий docker в систему:
+```
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable
+sudo apt update && apt-cache policy docker-ce
+```
+4. И установка Docker на Ubuntu: ` sudo apt install -y docker-ce`
+5. Чтобы завершить установку осталось добавить нашего пользователя в группу docker. Иначе при запуске утилиты вы будете получать ошибку подключения к сокету: ` sudo usermod -aG docker $(whoami)`
+6. Затем проверяем запущен ли сервис: ` sudo systemctl status docker`
+### Ссылки с более подробным описанием действий
+1. https://losst.ru/ustanovka-docker-na-ubuntu-16-04
