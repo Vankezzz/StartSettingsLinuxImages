@@ -43,6 +43,8 @@ Codename:   bionic
 Пакеты версии 1.0:
 * `git`
 * `krusader` и `konsole`
+* `net-tools`
+
 
 Пакеты будующей версии:
 
