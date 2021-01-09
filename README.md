@@ -38,7 +38,7 @@ Codename:   bionic
 Для работы будем пользоваться командой: `sudo apt-get install [пакет1] [пакет2] .. [пакетN]`
 К примеру: `sudo apt-get install git krusader konsole`
 В данном образе автоматически установлены следующие пакеты:
-`git`
-`krusader` и `konsole`
+* `git`
+* `krusader` и `konsole`
 
 
