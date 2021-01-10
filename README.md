@@ -44,6 +44,11 @@ Codename:   bionic
 * `git`
 * `krusader` и `konsole`
 * `net-tools`
+Нужно будет добавить и зафиксировать:
+```
+docker-compose
+
+```
 
 
 Пакеты будующей версии:
