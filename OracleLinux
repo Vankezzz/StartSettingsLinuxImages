@@ -1,0 +1,16 @@
+
+
+Installing Guest Additions (https://wiki.centos.org/HowTos/Virtualization/VirtualBox/CentOSguest)
+1. Login to a root shell or `su -` in a terminal window
+
+Установка инструментов
+1. Установим последнии обновления `sudo yum update -y`
+2. Git (установка, добавление информации о себе):
+```
+sudo yum install git -y
+git --version
+it config --global user.name "TESTINVS"
+git config --global user.email "test@invs.ru"
+git config --list
+```
+3. Nginx - 
