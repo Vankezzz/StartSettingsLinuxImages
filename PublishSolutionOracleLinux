@@ -1,0 +1,21 @@
+Деплой проекта на линукс:
+Создание самоподписанного сертификата (https://serverfault.com/questions/224122/what-is-crt-and-key-files-and-how-to-generate-them):
+```
+openssl genrsa 2048 > host.key
+chmod 400 host.key
+openssl req -new -x509 -nodes -sha256 -days 365 -key host.key -out host.cert
+```
+Не забыть разместить их в `/etc/ssl/certs/`
+
+Нюансы размещения :
+1. https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/linux-nginx?view=aspnetcore-5.0 - Размещение ASP.NET Core в Linux с помощью Nginx
+
+Настройка firewall:
+https://www.digitalocean.com/community/tutorials/how-to-set-up-a-firewall-using-firewalld-on-centos-8
+```
+sudo dnf install firewalld
+sudo systemctl enable firewalld
+sudo systemctl start firewalld
+sudo firewall-cmd --state
+sudo firewall-cmd --zone=public --add-port=5000/tcp
+```
