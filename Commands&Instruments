@@ -1,0 +1,21 @@
+Linux
+Сети
+``
+`netstat -nutlp` - какие порты прослушиваются
+``
+Файловая система
+`mc` - тотал командер для линукса в командной строке
+``
+```
+```
+Nginx
+1. `systemctl restart nginx` - перезагружаем
+2. `systemctl status nginx` - проверяем
+3. `nginx -t` - тестируем концигурацию на синтаксические ошибки
+Программы для работы с сервером удаленно:
+PuTTY
+WINSC
+Remote Development - расширение для VS code
+
+https://habr.com/ru/post/332920/ - Разворачиваем и демонизируем ASP.NET Core приложение под Linux в виде фонового сервиса
+https://www.digitalocean.com/community/tutorials/how-to-use-systemctl-to-manage-systemd-services-and-units - How To Use Systemctl to Manage Systemd Services and Units
