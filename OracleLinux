@@ -1,7 +1,8 @@
 
 
-Installing Guest Additions (https://wiki.centos.org/HowTos/Virtualization/VirtualBox/CentOSguest)
-1. Login to a root shell or `su -` in a terminal window
+Добавление ip для моста
+1. `sudo nmtui` => далее выбираем `activate a connection` => выбираем наш интерфейс `enp0s3` => выходим
+2. Проверяем наш интерфейс `ifconfig enp0s3`
 
 Установка инструментов
 1. Установим последнии обновления `sudo yum update -y`
