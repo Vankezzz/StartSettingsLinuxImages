@@ -1,4 +1,8 @@
 
+Добавление пользователя `username` в sudoers:
+1. Заходим под `root` с помощью комманды `su -`
+2. Добавляем пользователя в группу `usermod -aG wheel username`
+3. Открываем `visudo` и в конце файла добавляем `username  ALL=(ALL) NOPASSWD:ALL` 
 
 Добавление ip для моста
 1. `sudo nmtui` => далее выбираем `activate a connection` => выбираем наш интерфейс `enp0s3` => выходим
