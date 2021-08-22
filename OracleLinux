@@ -19,7 +19,7 @@ git config --global user.email "test@invs.ru"
 git config --list
 ```
 3. Nginx:
-  а. 
+https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-centos-8
   
 Job for nginx.service failed because the control process exited with error code. See "systemctl status nginx.service" and "journalctl -xe" for details.
 https://www.digitalocean.com/community/questions/can-t-start-nginx-job-for-nginx-service-failed
