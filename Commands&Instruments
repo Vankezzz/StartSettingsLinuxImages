@@ -9,6 +9,13 @@ Linux
 ``
 ```
 ```
+
+Postgres
+1. `sudo psql --u  postgres is4admin` - форма  для подключения к базе данных psql --u {userName} {DBName}
+1. `\dt \dn` - таблицы и схемы в базеданных
+1. ``
+1. ``
+
 Nginx
 1. `systemctl restart nginx` - перезагружаем
 2. `systemctl status nginx` - проверяем
