@@ -20,6 +20,9 @@ git config --list
 ```
 3. Nginx:
 https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-centos-8
+
+4. mkcert
+https://linoxide.com/mkcert-localhost-ssl-certificates-linux/
   
 Job for nginx.service failed because the control process exited with error code. See "systemctl status nginx.service" and "journalctl -xe" for details.
 https://www.digitalocean.com/community/questions/can-t-start-nginx-job-for-nginx-service-failed
