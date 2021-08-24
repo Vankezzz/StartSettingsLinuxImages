@@ -18,6 +18,8 @@ Postgres
 
 docker (Oracle Linux & Centos)
 https://docs.docker.com/engine/install/centos/
+docker-compose
+https://docs.docker.com/compose/install/
 
 Nginx
 1. `systemctl restart nginx` - перезагружаем
