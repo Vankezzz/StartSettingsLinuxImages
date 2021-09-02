@@ -14,7 +14,7 @@ Linux
 `openssl req -new -x509 -keyout scoruba.asbc.lo.key -out scoruba.asbc.lo.crt -days 365 -nodes`
 
 Postgres
-1. `sudo psql --u  postgres is4admin` - форма  для подключения к базе данных psql --u {userName} {DBName}
+1. `sudo psql --u  postgres IdentityServer4Admin` - форма  для подключения к базе данных psql --u {userName} {DBName}
 1. `\dt \dn` - таблицы и схемы в базеданных
 1. ``
 1. ``
