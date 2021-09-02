@@ -13,11 +13,14 @@ Linux
 Создание сертификатов (самоподписанных):
 `openssl req -new -x509 -keyout scoruba.asbc.lo.key -out scoruba.asbc.lo.crt -days 365 -nodes`
 
-Postgres
+Postgres 12
+Установка на сервер приложений:
+https://huzefapatel.com/blogs/installing-postgresql-12-on-oracle-linux-7/
+https://techviewleo.com/install-postgresql-on-oracle-linux/
 1. `sudo psql --u  postgres IdentityServer4Admin` - форма  для подключения к базе данных psql --u {userName} {DBName}
 1. `\dt \dn` - таблицы и схемы в базеданных
-1. ``
-1. ``
+1. `select * from public."ClientPostLogoutRedirectUris";`
+1. ` UPDATE  public."ClientPostLogoutRedirectUris" SET "PostLogoutRedirectUri"='https://inspector.asbc.lo/index.html' where "ClientId"=3;`
 
 docker (Oracle Linux & Centos)
 https://docs.docker.com/engine/install/centos/
