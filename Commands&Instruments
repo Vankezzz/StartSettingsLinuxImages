@@ -6,7 +6,14 @@ Linux
 ``
 Файловая система
 `mc` - тотал командер для линукса в командной строке
-``
+Disk space info
+```
+df -h
+cd /
+du -sch * --exclude=home
+```
+
+
 ```
 ```
 
@@ -22,10 +29,6 @@ https://techviewleo.com/install-postgresql-on-oracle-linux/
 1. `select * from public."ClientPostLogoutRedirectUris";`
 1. ` UPDATE  public."ClientPostLogoutRedirectUris" SET "PostLogoutRedirectUri"='https://inspector.asbc.lo/index.html' where "ClientId"=3;`
 
-docker (Oracle Linux & Centos)
-https://docs.docker.com/engine/install/centos/
-docker-compose
-https://docs.docker.com/compose/install/
 
 Nginx
 1. `systemctl restart nginx` - перезагружаем
