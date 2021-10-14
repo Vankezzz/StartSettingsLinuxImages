@@ -37,6 +37,8 @@ Nginx
 Программы для работы с сервером удаленно:
 PuTTY
 WINSC
+MobaXTerm
+
 Remote Development - расширение для VS code
 
 https://habr.com/ru/post/332920/ - Разворачиваем и демонизируем ASP.NET Core приложение под Linux в виде фонового сервиса
