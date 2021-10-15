@@ -29,6 +29,44 @@ https://techviewleo.com/install-postgresql-on-oracle-linux/
 1. `select * from public."ClientPostLogoutRedirectUris";`
 1. ` UPDATE  public."ClientPostLogoutRedirectUris" SET "PostLogoutRedirectUri"='https://inspector.asbc.lo/index.html' where "ClientId"=3;`
 
+Установка пароля при первом пользовании:
+1. `sudo su postgres -c psql template` - логинемся в postgres
+2. `ALTER USER postgres with PASSWORD 'password';` - Меняем пароль
+
+
+Открыть доступ к postgresql серверу:
+1. `sudo -u postgres psql -c 'SHOW config_file'` - узнать информацию, где лежат конфиг файлы
+```bash
+could not change directory to "/root": Permission denied
+             config_file
+-------------------------------------
+ /var/lib/pgsql/data/postgresql.conf
+(1 row)
+```
+2. `cd /var/lib/pgsql/data/` - проходим в директорию
+3. Кореектируем postgresql.conf
+До
+```bash
+#listen_addresses = '127.0.0.1'		# what IP address(es) to listen on;
+```
+После
+```bash
+listen_addresses = '*'		# what IP address(es) to listen on;
+```
+4. ` systemctl restart postgresql` - Перезагружаем postgresql
+5. `netstat -nutlp` - Проверяем, что мы прослушиваем все Ip
+```bash
+tcp        0      0 0.0.0.0:5432            0.0.0.0:*               LISTEN      96123/postmaster
+tcp6       0      0 :::5432                 :::*                    LISTEN      96123/postmaster
+```
+6. Кореектируем pg_hba.conf, чтобы получилисб такие строки:
+```bash
+# IPv4 local connections:
+host    all             all             0.0.0.0/0               md5
+# IPv6 local connections:
+host    all             all             ::0/0                   md5
+```
+7. ` systemctl restart postgresql` - Перезагружаем postgresql
 
 Nginx
 1. `systemctl restart nginx` - перезагружаем
